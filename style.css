@@ -39,6 +39,10 @@ body {
         font-family: Poppins;
         font-size: 45px;
         font-weight: 600;
+        animation-name: scale;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
       }
       p {
         margin-top: 20px;
@@ -65,7 +69,7 @@ body {
     color: white;
 
     .bi {
-      padding: 20px;
+      padding: 18px;
       border: 2px solid white;
       border-radius: 50%;
     }
@@ -137,4 +141,11 @@ body {
       }
     }
   }
+}
+
+@keyframes scale {
+  0%   {transform: scale(1.05);}
+  25%  {transform: scale(1.1);}
+  50%  {transform: scale(1.15);}
+  100% {transform: scale(1.2);}
 }
